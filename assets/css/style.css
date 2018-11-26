@@ -1,0 +1,20 @@
+body{
+    background-image: url(../images/wall.jpg);
+}
+
+#target,#result{
+    max-width: 18rem;
+    height: 100px;
+}
+.badge-warning{
+    color: whitesmoke;
+    background-color: coral;
+    padding: 10px;
+}
+.badge-info{
+    text-align: left;
+}
+.card-img-top,.card{
+    max-width: 100px;
+}
+

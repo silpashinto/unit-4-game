@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title> CrystalsCollector Game</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+     <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1><span class="badge badge-warning">CrystalsCollector!</span></h1>
+        <h4><span class="badge badge-info">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below.</p>
+                <p>By clicking on a crystal you will add a specific
+                    amountof points to your total score.</p>
+                <p>You win the game by matching your total score to random number.</p>
+                <p>You loose the game if your toatl score goes above the random number.</p>
+                <p>The value of each crystal is hidden from you untill you click on it.</p>
+                <p>Each time when the game starts, the game will change the value of each crystal.</p>
+            </span>
+        </h4>
+        <div class="card-deck" >
+            <div class="card text-white bg-warning mb-3" id="target">
+                <div class="card-body">
+                    <h1 class="card-title"><span id="targetNumber"></span></h1>
+                </div>
+            </div>
+            <div class="card text-white bg-primary mb-3 score" id="result">
+                <div class="card-body">
+                    <h5 class="card-title"> <span id="wins"></span></h5>
+                    <h5 class="card-title"> <span id="loss"></span></h5>                 
+                 </div>
+
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card one">
+                <img class="card-img-top" src="./assets/images/crystal1.jpg" alt="Card image cap">
+               
+            </div>
+            <div class="card two">
+                <img class="card-img-top" src="./assets/images/crystal2.jpg" alt="Card image cap">
+                
+            </div>
+            <div class="card three">
+                <img class="card-img-top" src="./assets/images/crystal3.jpg" alt="Card image cap">
+                
+            </div>
+            <div class="card four">
+                <img class="card-img-top" src="./assets/images/crystal4.jpg" alt="Card image cap">
+    
+            </div>
+        </div>
+<br/>
+
+
+        <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                <div class="card-header">Your total score:</div>
+                <div class="card-body">
+                  <h1 class="card-title"><span id ="total"></span></h1>
+                 
+                </div>
+              </div>
+
+
+
+    </div>
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+
+</html>
