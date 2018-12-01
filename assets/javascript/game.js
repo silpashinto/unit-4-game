@@ -36,24 +36,26 @@ $(document).ready(function () {
 
     function calculate(crystalVlaue) {
 
-
         if (totalScore === targetNumber) {
 
+            alert('You Won');
             wins = wins + 1;
             $("#wins").text("Wins : " + wins);
             setValues();
 
         }
-        else if (totalScore > targetNumber) {
+       else if (totalScore > targetNumber) {
 
+            alert('You Lost');
             loss = loss + 1;
             $("#loss").text("Loss : " + loss);
             setValues();
 
         }
         else {
-            totalScore += crystalVlaue;
+            totalScore += crystalVlaue;  
             $("#total").text(totalScore);
+          
         }
 
     }
